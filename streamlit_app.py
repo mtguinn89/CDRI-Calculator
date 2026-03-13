@@ -28,7 +28,7 @@ st.metric(label="Calculated CDRI", value=f"{cdri:.4f} cc/kg/hr/mg")
 # Threshold Logic based on segmental regression
 if cdri < 0.075:
     st.error("🚨 **RESULT: NON-RESPONDER**")
-    st.warning("**Clinical Action:** High risk for CSA-AKI. Consider early renal protective interventions such as amino acid infusions.")
+    st.warning("**Clinical Action:** High risk for CSA-AKI. Consider early renal protective interventions.")
 else:
     st.success("✅ **RESULT: ADEQUATE RESPONDER**")
     st.info("**Clinical Action:** Low risk for CSA-AKI development. Continue standard postoperative care.")
